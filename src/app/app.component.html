@@ -1,1 +1,6 @@
-<router-outlet></router-outlet>
+
+<h1 *ngIf="!finshedAuthCheck()">
+  Loading
+</h1>
+
+<router-outlet *ngIf="finshedAuthCheck()"></router-outlet>
